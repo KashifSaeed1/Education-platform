@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import LoadingSpinner from './components/LoadingSpinner';
 import Hero from './components/Hero';
 import About from './components/About';
+import Education from './components/Education';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
     <div className="min-h-screen overflow-hidden">
       <Hero/>
       <About />
+      <Education />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import LoadingSpinner from './components/LoadingSpinner';
+import Hero from './components/Hero';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="min-h-screen overflow-hidden">
-      <h2>Educational website</h2>
+      <Hero/>
     </div>
   );
 }

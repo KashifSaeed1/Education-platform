@@ -5,6 +5,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import Hero from './components/Hero';
 import About from './components/About';
 import Education from './components/Education';
+import PricingSection from './components/PricingSection';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,6 +27,7 @@ function App() {
       <Hero/>
       <About />
       <Education />
+      <PricingSection />
     </div>
   );
 }

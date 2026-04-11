@@ -7,6 +7,7 @@ import About from './components/About';
 import Education from './components/Education';
 import PricingSection from './components/PricingSection';
 import Services from './components/Services';
+import WhyUs from './components/WhyUs';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,7 +31,7 @@ function App() {
       <Education />
       <PricingSection />
       <Services />
-      
+       <WhyUs />
     </div>
   );
 }

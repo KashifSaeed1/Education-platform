@@ -9,6 +9,7 @@ import PricingSection from './components/PricingSection';
 import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
       <Services />
        <WhyUs />
       <Footer />
+      <ScrollToTopButton/>
     </div>
   );
 }

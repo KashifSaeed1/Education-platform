@@ -2,26 +2,26 @@ import React from "react";
 import { Clock, Phone, Gauge, RotateCcw } from "lucide-react";
 
 export default function WhyUs() {
-  const items = [
+const items = [
     {
       icon: <RotateCcw size={32} />,
-      title: "Vision School",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua. ",
+      title: "Flexible Learning",
+      desc: "Study at your own pace with 24/7 access to courses, recorded lectures, and learning materials from anywhere in the world.",
     },
     {
       icon: <Clock size={32} />,
-      title: "Vision School",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+      title: "Save Your Time",
+      desc: "No commuting, no fixed schedules. Learn whenever suits you  morning, evening, or weekend  and fit education around your life.",
     },
     {
       icon: <Gauge size={32} />,
-      title: "Vision School",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+      title: "Track Your Progress",
+      desc: "Monitor your performance with real-time dashboards, quizzes, and progress reports so you always know where you stand.",
     },
     {
       icon: <Phone size={32} />,
-      title: "Vision School",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.",
+      title: "24/7 Support",
+      desc: "Our dedicated support team and tutors are always available to help you through live chat, calls, or email whenever you need guidance.",
     },
   ];
 

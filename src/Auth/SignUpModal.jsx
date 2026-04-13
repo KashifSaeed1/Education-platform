@@ -13,7 +13,6 @@ const SignUpModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data:", form);
-    // Yahan API call lagao
     onClose();
   };
 

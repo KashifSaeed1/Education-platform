@@ -1,9 +1,17 @@
 import { useState } from 'react';
 import heroImage from '../assets/hero.png';
 import { ArrowRight, Menu, X, HomeIcon } from 'lucide-react';
+import AuthModal from '../Auth/AuthModal';
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalTab, setModalTab] = useState("login")
+  
+   const openModal = (tab = "login") => {
+    setModalTab(tab);
+    setModalOpen(true);
+  };
 
   const navItems = [
     { name: 'Home', link: '#home' },
@@ -49,6 +57,7 @@ const Hero = () => {
                    hover:bg-gray-200 transition-colors"
                   data-aos="fade-down"
                   data-aos-delay="500"
+                  onClick={() => openModal("signup")}
                 >
                   Get Started
                 </button>
@@ -152,6 +161,7 @@ const Hero = () => {
             </div>
           </div>
         </section>
+        <AuthModal isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultTab={modalTab} />
       </div>
     </div>
   );

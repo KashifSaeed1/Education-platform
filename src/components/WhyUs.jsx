@@ -1,5 +1,5 @@
 import React from "react";
-import { Clock, Phone, Gauge, RotateCcw } from "lucide-react";
+import { Clock, Phone, Gauge, RotateCcw, Users, Globe } from "lucide-react";
 
 export default function WhyUs() {
 const items = [
@@ -11,12 +11,22 @@ const items = [
     {
       icon: <Clock size={32} />,
       title: "Save Your Time",
-      desc: "No commuting, no fixed schedules. Learn whenever suits you  morning, evening, or weekend  and fit education around your life.",
+      desc: "No commuting, no fixed schedules. Learn whenever suits you—morning, evening, or weekend—and fit education around your life.",
     },
     {
       icon: <Gauge size={32} />,
       title: "Track Your Progress",
       desc: "Monitor your performance with real-time dashboards, quizzes, and progress reports so you always know where you stand.",
+    },
+    {
+      icon: <Users size={32} />, // New Item
+      title: "Expert Instructors",
+      desc: "Learn from industry leaders and experienced educators who bring real-world insights and academic excellence to every lesson.",
+    },
+    {
+      icon: <Globe size={32} />, // New Item
+      title: "Global Community",
+      desc: "Connect with a diverse network of learners worldwide. Collaborate on projects and expand your professional circle across borders.",
     },
     {
       icon: <Phone size={32} />,

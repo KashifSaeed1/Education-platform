@@ -2,11 +2,13 @@ import { useState } from 'react';
 import heroImage from '../assets/hero.png';
 import { ArrowRight, Menu, X, HomeIcon } from 'lucide-react';
 import AuthModal from '../Auth/AuthModal';
+import DemoModal from './DemoModal';
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalTab, setModalTab] = useState("login")
+  const [showModal, setShowModal] = useState(false);
   
    const openModal = (tab = "login") => {
     setModalTab(tab);
@@ -130,7 +132,7 @@ const Hero = () => {
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/20
+                <button onClick={()=> setShowModal(true)} className="px-6 sm:px-8 py-3 sm:py-4 bg-white/10 backdrop-blur-sm border border-white/20
                  text-white font-semibold rounded-xl hover:bg-white/20 transition-colors">
                   Book a Demo
                 </button>
@@ -162,6 +164,8 @@ const Hero = () => {
           </div>
         </section>
         <AuthModal isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultTab={modalTab} />
+          {/* Modal Component */}
+      <DemoModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </div>
   );

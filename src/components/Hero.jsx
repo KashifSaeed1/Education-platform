@@ -2,7 +2,7 @@ import { useState } from 'react';
 import heroImage from '../assets/hero.png';
 import { ArrowRight, Menu, X, HomeIcon } from 'lucide-react';
 import AuthModal from '../Auth/AuthModal';
-// import DemoModal from './DemoModal';
+import DemoModal from './DemoModal';
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -165,7 +165,7 @@ const Hero = () => {
         </section>
         <AuthModal isOpen={modalOpen} onClose={() => setModalOpen(false)} defaultTab={modalTab} />
           {/* Modal Component */}
-      {/* <DemoModal isOpen={showModal} onClose={() => setShowModal(false)} /> */}
+      <DemoModal isOpen={showModal} onClose={() => setShowModal(false)} />
       </div>
     </div>
   );

@@ -32,12 +32,24 @@ export default function Footer() {
               digital tools. Join 50,000+ students today.
             </p>
             <div className="flex space-x-4">
-              {[FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300">
-                  <Icon size={16} />
-                </a>
-              ))}
-            </div>
+                {[
+                  { Icon: FaFacebookF, link: "https://facebook.com/yourprofile" },
+                  { Icon: FaTwitter, link: "https://twitter.com/yourprofile" },
+                  { Icon: FaInstagram, link: "https://instagram.com/yourprofile" },
+                  { Icon: FaLinkedinIn, link: "https://linkedin.com/in/yourprofile" },
+                ].map((item, i) => (
+                  <a
+                    key={i}
+                    href={item.link}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-blue-500 transition-all duration-300"
+                  >
+                    <item.Icon size={16} />
+                  </a>
+                ))}
+              </div>
+            
           </div>
 
           <div className="lg:col-span-2">

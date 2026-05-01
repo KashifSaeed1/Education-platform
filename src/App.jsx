@@ -33,7 +33,7 @@ function App() {
       <Education />
       <PricingSection />
       <Services />
-       <WhyUs />
+      <WhyUs />
       <Footer />
       <ScrollToTopButton/>
     </div>

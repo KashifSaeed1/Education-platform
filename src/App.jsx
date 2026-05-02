@@ -8,6 +8,7 @@ import Education from './components/Education';
 import PricingSection from './components/PricingSection';
 import Services from './components/Services';
 import WhyUs from './components/WhyUs';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 
@@ -34,6 +35,7 @@ function App() {
       <PricingSection />
       <Services />
       <WhyUs />
+      <Contact />
       <Footer />
       <ScrollToTopButton/>
     </div>

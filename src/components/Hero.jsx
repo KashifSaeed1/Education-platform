@@ -21,7 +21,8 @@ const Hero = () => {
     { name: 'Education', link: '#education' },
     { name: 'Pricing', link: '#pricing' },
     { name: 'Services', link: '#services' },
-    { name: 'Why Us', link: '#whyus' }
+    { name: 'Why Us', link: '#whyus' },
+    { name: 'Contact', link: '#contact' }
   ];
 
   return (

@@ -113,7 +113,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100" data-aos="fade-left" data-aos-delay="400">
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-[#0A1A44] mb-2">Send us a Message</h3>
+              <h3 className="text-3xl font-bold text-[#0A1A44] mb-2" >Send us a <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Message</span></h3>
               <p className="text-gray-600">Fill out the form below and we'll get back to you soon!</p>
             </div>
 
@@ -187,7 +187,7 @@ const Contact = () => {
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center space-x-3 group"
               >
                 <Send className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-200" />
-                <span>Send Message</span>
+                <span >Send Message</span>
               </button>
             </form>
           </div>
